@@ -1,0 +1,23 @@
+{
+  "name": "nodejsbasic",
+  "version": "1.0.0",
+  "description": "Làm quen với nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhatvy1/nodejsbasic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhatvy1/nodejsbasic/issues"
+  },
+  "homepage": "https://github.com/nhatvy1/nodejsbasic#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

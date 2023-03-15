@@ -1,15 +1,17 @@
 import express from 'express'
 import configViewEngine from './configs/viewEngine'
+import initWebRoute from './route/web'
+require('dotenv').config()
 
 const path = require('path')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000 
 
+// setup view engine
 configViewEngine(app)
 
-app.get('/', (req, res) => {
-    res.render('test/index.ejs')
-})
+// init web route
+initWebRoute(app)
 
 app.listen(port, 'localhost', () => {
     console.log('Node.JS server is running on port: 3000');

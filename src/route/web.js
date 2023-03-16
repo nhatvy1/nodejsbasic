@@ -1,15 +1,15 @@
 import express from 'express'
 import homeController from '../controller/homeController'
+import aboutController from '../controller/aboutController'
+
 let router = express.Router()
 
 const initWebRoute = (app) => {
     router.get('/', homeController.getHomepage)
 
-    router.get('/about', (req, res) => {
-        res.render('test/index.ejs')
-    })
+    router.get('/about', aboutController.aboutPage)
 
-    return app.use('/abc', router)
+    return app.use('/', router) // tiền tố được thêm vào mỗi khi gửi request
 }
 
 export default initWebRoute

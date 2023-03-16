@@ -9,3 +9,6 @@ npm install @babel/core @babel/node @babel/preset-env
 
 # install dotenv 
 npm install --save-exact dotenv@10.0.0
+
+# install mysql2
+npm install --save-exact mysql2@2.3.0

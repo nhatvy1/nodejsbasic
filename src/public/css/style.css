@@ -6,7 +6,11 @@ body {
 img {
     width: 100%;
 }
-  
+ 
+a {
+    text-decoration: none;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;

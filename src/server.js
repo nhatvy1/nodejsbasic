@@ -8,6 +8,10 @@ const path = require('path')
 const app = express()
 const port = process.env.PORT || 3000 
 
+// gửi data từ client lên server đơn giản 
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
 // setup view engine
 configViewEngine(app)
 

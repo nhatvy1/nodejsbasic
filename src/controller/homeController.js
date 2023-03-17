@@ -14,7 +14,16 @@ let getDetailPage = async (req, res) => {
     return res.send(JSON.stringify(user[0]))
 }
 
+let createNewUser = async (req, res) => {
+    console.log('>>> check req:', req.body)
+    let {firstName, lastName, age, email } = req.body
+    await pool.execute(`insert into users(firstName, lastName, age, email) values(?, ?, ?, ?)`, [firstName, lastName, age, email])
+    
+    return res.redirect('/')
+}
+
 module.exports = {
     getHomepage,
-    getDetailPage   
+    getDetailPage,
+    createNewUser   
 }

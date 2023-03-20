@@ -12,3 +12,6 @@ npm install --save-exact dotenv@10.0.0
 
 # install mysql2
 npm install --save-exact mysql2@2.3.0
+
+# install multer upload file
+npm install --save-exact multer@1.4.5
